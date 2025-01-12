@@ -26,5 +26,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: greet
         run: |
-          echo " Project  is ${{ github.event.input.Project }}"
-          echo " Selected environment is ${{ github.event.input.envrionment}} "
+          echo " Project  is ${{ github.event.input.Project }} / ${{ input.Project }}"
+          echo " Selected environment is ${{ github.event.input.envrionment}} / ${{ inputs.environment}} "

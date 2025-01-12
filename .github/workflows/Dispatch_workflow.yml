@@ -13,4 +13,14 @@ on:
         - e1
         - e2
         - e3
-        
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: greet
+      - run: |
+          echo " environment is ${{ github.event.environment }}"

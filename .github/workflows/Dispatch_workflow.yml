@@ -4,9 +4,8 @@ on:
   workflow_dispatch:
     inputs:
       Project:
-        type: project
         description: Select the project
-      choice:
+        type: choice
         options:
         - one-data
         - one-data-staging  

@@ -3,19 +3,20 @@ name: Dispatch Workflow
 on: 
   workflow_dispatch:
     inputs:
-      environment:
-        type: environment
-        description: Select the environment
-      boolean:
-        type: boolean
-        description: True or False
+      Project:
+        type: project
+        description: Select the project
       choice:
-        type: choice
-        description: Make a choice
         options:
-        - foo
-        - bar
-        - baz
+        - one-data
+        - one-data-staging  
+      environment:
+        type: choice
+        description: select the environment
+        options:
+        - E1
+        - E2
+        - E3
 
 
 jobs:

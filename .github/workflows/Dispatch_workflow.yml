@@ -1,18 +1,21 @@
-name: Deploy Workflow
+name: Dispatch Workflow
 
 on: 
   workflow_dispatch:
     inputs:
       environment:
         type: environment
-        description: 'Select Envirionment to deploy '
-        required: true
+        description: Select the environment
+      boolean:
+        type: boolean
+        description: True or False
       choice:
         type: choice
+        description: Make a choice
         options:
-        - e1
-        - e2
-        - e3
+        - foo
+        - bar
+        - baz
 
 
 jobs:
